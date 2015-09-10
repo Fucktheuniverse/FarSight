@@ -1,0 +1,216 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:padding="0dp"
+    tools:context="ru.farsight.MainActivity">
+
+    <ImageView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/main_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nopanda"
+        android:visibility="visible"/>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:text=""
+        android:background="@drawable/mapbtnstyle"
+        android:id="@+id/mapBtn"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:enabled="true"  >
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/version"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="@string/version"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings_field"
+    android:visibility="invisible">
+    <TextView
+        android:id="@+id/tvTitleGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provider_gps"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" >
+    </TextView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/EnabledGPS"
+            android:src="@drawable/ledoff"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:layout_alignBottom="@+id/tvTitleGPS"
+            android:layout_toRightOf="@+id/tvTitleGPS"
+            android:layout_toEndOf="@+id/tvTitleGPS"
+            android:layout_alignTop="@+id/tvTitleGPS" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_alignLeft="@id/tvTitleGPS"
+        android:layout_alignStart="@id/tvTitleGPS"
+        android:layout_below="@id/tvTitleGPS"
+        android:visibility="visible" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvc"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/tvLocation"
+        android:layout_gravity="start"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|start"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:padding="10dp"
+    >
+    <Button
+        android:id="@+id/btnLocationSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLocationSettings"
+        android:text="@string/location_settings"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/settingsbtnstyle"
+        android:padding="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible" >
+    </Button>
+    <Button
+        android:id="@+id/btnStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/style_btn"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/style_btn"
+        android:onClick="onClickStyleBtn"
+        android:padding="8dp"
+        android:layout_below="@id/btnLocationSettings"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@id/btnLocationSettings"
+        android:layout_alignStart="@id/btnLocationSettings"
+        android:layout_alignRight="@id/btnLocationSettings"
+        android:layout_alignEnd="@id/btnLocationSettings"
+        android:visibility="visible" >
+    </Button>
+    <Button
+        android:id="@+id/btnSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/site_btn"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/website_btn"
+        android:onClick="onClickSiteBtn"
+        android:padding="8dp"
+        android:layout_below="@id/btnStyle"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@id/btnLocationSettings"
+        android:layout_alignStart="@id/btnLocationSettings"
+        android:layout_alignRight="@id/btnLocationSettings"
+        android:layout_alignEnd="@id/btnLocationSettings"
+        android:visibility="visible" >
+    </Button>
+
+</RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_progress_bar_set"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" >
+        <ProgressBar
+            android:id="@+id/mana_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:max="100"
+            android:progressDrawable="@drawable/manabar"
+            />
+        <TextView
+            android:id="@+id/prog_mana"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="@id/mana_bar"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+    </FrameLayout>
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"
+        android:background="@drawable/drawershadow"
+        android:padding="10dp"
+        />
+</android.support.v4.widget.DrawerLayout>

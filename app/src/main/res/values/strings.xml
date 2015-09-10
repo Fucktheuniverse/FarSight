@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FarSight</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">FarSight</string>
+    <string name="version">v0.0.5</string>
+    <string name="mapBtn">Map</string>
+    <string name="action_settings">Menu</string>
+    <string name="provider_gps">GPS </string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Location settings</string>
+    <string name="style_btn">Style</string>
+    <string name="site_btn">Our website</string>
+    <string name="readBtn">read</string>
+    <string name="farsight_abil">Restore Mana</string>
+    <string name="clr_position">Clear position file</string>
+    <string name="exit">Exit</string>
+    <string name="number_of_coordinates">Show number of coordinates</string>
+    <string-array name="views_array">
+        <item>Home</item>
+        <item>My Quests</item>
+        <item>Settings</item>
+        <item>Available Quests</item>
+        <item>Achievements</item>
+        <item>Inventory</item>
+    </string-array>
+    <string-array name="map_views_array">
+        <item>Map</item>
+        <item>My Quests</item>
+        <item>Menu</item>
+    </string-array>
+    <string name="menu">Menu</string>
+    <string name="first_screen">Первый экран</string>
+    <string name="second_screen">Второй экран</string>
+    <string name="third_screen">Coming soon</string>
+    <string name="open_menu">Open</string>
+    <string name="close_menu">Close</string>
+    <string name="quest_name">Daily Quest</string>
+    <string name="objective">Objective</string>
+    <string name="objectivetext">- Walk across Naberezhnaia.</string>
+    <string name="questtext">It is a good day today. Why not go for another ice cream or two with a pack of friends, enjoying the warm summer sun? Take a walk to the city centre and visit the shoreline at Batareinaia Naberezhnaia. You will find lots of fun there today!</string>
+    <string name="reward">Reward</string>
+    <string name="rewardtext">50 FS Coins</string>
+    <string name="title_activity_quest_taker">QuestTaker</string>
+    <string name="hello_world">Hello world!</string>
+</resources>

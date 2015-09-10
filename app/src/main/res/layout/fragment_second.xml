@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/textbg"
+            android:id="@+id/container"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/quest_name"
+                android:id="@+id/questName"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/questtext"
+                android:id="@+id/questText"
+                android:layout_below="@+id/questName"
+                android:gravity="top|left"
+                android:padding="5dp"
+
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/objective"
+                android:id="@+id/obj"
+                android:layout_below="@+id/questText"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/objectivetext"
+                android:id="@+id/objText"
+                android:layout_below="@+id/obj"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/reward"
+                android:id="@+id/rew"
+                android:layout_below="@+id/objText"
+                android:gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imgFSc"
+                android:src="@drawable/coin"
+                android:layout_below="@+id/rew"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/rewardtext"
+                android:id="@+id/rewText"
+                android:padding="5dp"
+                android:layout_alignBottom="@+id/imgFSc"
+                android:layout_toEndOf="@+id/imgFSc"
+                android:layout_toRightOf="@+id/imgFSc"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
